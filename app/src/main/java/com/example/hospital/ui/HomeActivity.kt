@@ -32,8 +32,6 @@ class HomeActivity :AppCompatActivity(R.layout.activity_home) {
         super.onCreate(savedInstanceState)
         binding= ActivityHomeBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
-        Log.e("onCreate","")
         viewModel=ViewModelProvider(this).get(BannersViewModel::class.java)
         binding.name.text=AuthData.patient_name
         binding.interView.setOnClickListener {
