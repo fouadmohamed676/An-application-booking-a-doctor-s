@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.InfoActivity"
+    android:layoutDirection="ltr">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/purple_700"
+        android:padding="10dp"
+        android:text="معلومات صحيه"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText,MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="0dp"
+        android:layout_height="250sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:srcCompat="@drawable/rheumatology_amico"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/orderRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        tools:listitem="@layout/my_order_item"
+        android:layout_marginTop="5sp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="5sp"
+        android:gravity="right"
+        android:textSize="18sp"
+        android:text="تجب زيارة طبيب الأسنان بشكل دوري كل ستة أشهر. يستمتع معظم الأطفال باستخدام الفرشاة الكهربائية مما يجعلها محفزة لاهتمامهم بأسنانهم. مقدمة: تنظيف الأسنان بفرشاة ومعجون الأسنان بشكل صحيح ويومي يشكل أهم وسيلة للمحافظة على نظافة الفم والأسنان والوقاية من التسوس وما ينجم عنه من أمراض"
+         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/ord"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="right"
+        android:text="إن إهمال تنظيف الأسنان بالفرشاة والمعجون يؤدي إلى تراكم طبقة البلاك على أسطح الأسنان، مما يؤدي إلى زيادة البكتريا المسببة لتسوس الأسنان والتهابات اللثة؛ حيث تقوم البكتيريا بإنتاج أحماض تهاجم الأسنان وتؤدي إلى تكسرها وحدوث التسوس."
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/orderRecycler"
+        tools:ignore="HardcodedText"
+        tools:listitem="@layout/my_order_item" />
+</androidx.constraintlayout.widget.ConstraintLayout>
